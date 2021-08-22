@@ -1,7 +1,7 @@
 import express from 'express';
 require('dotenv').config()
 const stripe = require('stripe')(process.env.STRIPESKTEST);
-const YOUR_DOMAIN = 'http://localhost:3000';
+const YOUR_DOMAIN = 'http://kustom-charmz.herokuapp.com/';
 import { newOrder } from '../../utils/mail';
 
 

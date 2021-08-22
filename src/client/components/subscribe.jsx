@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
 export default function Subscribe(props) {
 
@@ -71,16 +72,16 @@ export default function Subscribe(props) {
                                     </div>
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                            <label for="First Name" class="form-label">First Name</label>
-                                            <input onChange={(e) => setFirst(e.target.value)} value={first} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Michelle" />
+                                            <label for="First Name" class="form-label">First Name <code>(Required)</code></label>
+                                            <input onChange={(e) => setFirst(e.target.value)} value={first} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tahmirah" />
                                         </div>
                                         <div class="mb-3">
-                                            <label for="Last" class="form-label">Last Name</label>
-                                            <input onChange={(e) => setLast(e.target.value)} type="text" value={last} class="form-control" id="exampleFormControlInput1" placeholder="Obama" />
+                                            <label for="Last" class="form-label">Last Name <code>(Required)</code></label>
+                                            <input onChange={(e) => setLast(e.target.value)} type="text" value={last} class="form-control" id="exampleFormControlInput1" placeholder="Cosby" />
                                         </div>
                                         <div class="mb-3">
                                             <label for="Email" class="form-label">Email <code>(Required)</code></label>
-                                            <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" class="form-control" id="exampleFormControlInput1" placeholder="theobamas@gmail.com" />
+                                            <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" class="form-control" id="exampleFormControlInput1" placeholder="tcosby25@gmail.com" />
                                         </div>
                                     </div>
                                     <div class="modal-footer">

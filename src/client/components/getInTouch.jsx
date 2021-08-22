@@ -49,19 +49,19 @@ export default function Getintouch(props) {
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-phone"></i><span className="p-4 text-secondary">205-603-8724</span>
+                                <i class="bi bi-phone"></i><p className="p-4 text-secondary d-inline">205-603-8724</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-envelope"></i><span className="p-4 text-secondary">admin@kustomcharmz.com</span>
+                                <i class="bi bi-envelope"></i><p className="p-4 text-secondary d-inline">admin@k3charmz.com</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-geo-alt"></i><span className="p-4 text-secondary">Birmingham, AL</span>
+                                <i class="bi bi-geo-alt"></i><p className="p-4 text-secondary d-inline">Birmingham, AL</p>
                             </div>
 
                         </div>
@@ -84,11 +84,11 @@ export default function Getintouch(props) {
                         
                             <div class="mb-3">
                                 <label for="Full Name" class="form-label text-secondary">Full Name</label>
-                                <input onChange={(e) => setName(e.target.value)} type="text" value={name} class="form-control" id="name" placeholder="Bernie Mac" />
+                                <input onChange={(e) => setName(e.target.value)} type="text" value={name} class="form-control" id="name" placeholder="Jania Cosby" />
                             </div>
                             <div class="mb-3">
                                 <label for="Subject" class="form-label text-secondary">Subject</label>
-                                <input onChange={(e) => setSubject(e.target.value)} type="text" value={subject} class="form-control" id="Subject" placeholder="VIP Subscription Inquiryx" />
+                                <input onChange={(e) => setSubject(e.target.value)} type="text" value={subject} class="form-control" id="Subject" placeholder="VIP Subscription Inquiry" />
                             </div>
                             <div class="mb-3">
                                 <label for="Email" class="form-label text-secondary">Email</label>

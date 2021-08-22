@@ -12,7 +12,7 @@ export default function ProductThumbnail(props) {
             <main className="productThumbnail">
                 <div className="container">
                     <div className="row py-4">
-                        <h1 className="display-3 text-center">{props.title}</h1>
+                        <h1 className="display-5 text-center">{props.title}</h1>
                     </div>
                     <div className="row py-2">
                         
