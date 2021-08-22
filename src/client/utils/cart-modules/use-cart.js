@@ -15,17 +15,18 @@ export default function UseCart(props) {
 
 
 
-    function addToCart(product) {
+    function addToCart(product,color) {
         setCart((prev) => {
-            const existing = cart.find((item) => item.id === product.id,);
+            const existing = cart.find((item) => item.id === product.id && color === prev.slice(-1)[0].color);
+            console.log(existing)
 
             return existing
-                ? [...cart.map((item) => item.id === product.id
-                    ? { ...item, qty: item.qty + 1 }
+                ? [...cart.map((item) => item.id === product.id && color === prev.slice(-1)[0].color
+                    ? { ...item, qty: item.qty + 1}
                     : item,
                 ),
                 ]
-                : [...prev, { ...product, qty: 1 }]
+                : [...prev, { ...product, qty: 1, color: color}]
 
         })
 
@@ -39,10 +40,10 @@ export default function UseCart(props) {
 
     }
 
-    function changeQty(product, qty) {
+    function changeQty(product, qty, color) {
         if (qty === 0 ) return removeCartItem(product.id)
         setCart((prev) => [
-            ...prev.map((item) => item.id === product.id ? { ...item, qty } : item,)
+            ...prev.map((item) => item.id === product.id && item.color === color ? { ...item, qty } : item,)
         ])
     }
 

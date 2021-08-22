@@ -9,6 +9,10 @@ import Passwordreset from './screens/passwordReset';
 import Register from './screens/register';
 import UseCart from './utils/cart-modules/use-cart';
 import CartContext from './utils/cart-modules/cart-context';
+import Cart from './components/store/cart';
+import Success from './components/store/success';
+import SingleProduct from './components/store/singleProduct';
+import Onsale from './screens/onSale';
 
 
 export default function App(props) {
@@ -33,11 +37,15 @@ export default function App(props) {
 			<Switch>
 	
 				<Route exact path="/" component={Home} />
+				<Route exact path="/cart" component={Cart} />
+				<Route exact path="/product/:id" component={SingleProduct} />
+				<Route exact path="/onSale" component={Onsale} />
+				<Route exact path="/success" component={Success} />
 				<Route exact path="/about"  component={About} />
 				<Route exact path="/login" component={Login} /> 
 				<Route exact path="/register" component={Register} />
 				<Route exact path="/resetPassword" component={Passwordreset} />
-				<PrivateRoute path="/contact" exact component={Contact} />
+				<PrivateRoute exact path="/contact" component={Contact} />
 
 				<Route render={() => <h1>404: page not found</h1>} />
 				

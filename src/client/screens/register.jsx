@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { register } from '../utils/register';
+import logo from '../assets/1.png'
 
 
 export default function Register(props) {
@@ -59,11 +60,20 @@ export default function Register(props) {
                 <form>
 
 
-                    <div className="row align-items-center justify-content-center">
+                    <div className="row align-items-center justify-content-center py-4">
+                        <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+
+                            <div className="row justify-content-center py-2">
+                                <img className="w-25" src={logo}></img>
+                            </div>
+
+
+                        </div>
+
                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
 
 
-                            <div className="text-center py-3"><h2>Register for exclusive access</h2></div>
+                            <div className="text-center py-3"><h5>Register for exclusive access</h5></div>
 
 
                         </div>

@@ -1,0 +1,105 @@
+[
+    {
+        "id": 12345678,
+        "name": "Kustom Charm Bracelet",
+        "price": 290,
+        "category": "Bracelets",
+        "count": "4",
+        "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
+        "image": "https://res.cloudinary.com/lokiddo/image/upload/v1628907409/Kustom%20Charmz/qydlab9rtkzfp0oezonu.png",
+        "images": [
+            {
+                "id": 1,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628907409/Kustom%20Charmz/qydlab9rtkzfp0oezonu.png"
+            },
+            {
+                "id": 2,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628907409/Kustom%20Charmz/e7t6jywzigqvd0d9yeme.png"
+            },
+            {
+                "id": 3,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628907410/Kustom%20Charmz/v31cbbgcs0wu4frelwwd.png"
+            },
+            {
+                "id": 4,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628907411/Kustom%20Charmz/xdv4qtm7dabrwbmfeowh.png"
+            },
+            {
+                "id": 5,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628907412/Kustom%20Charmz/n3dasydg7rttgz4sanb0.png"
+            }
+        ],
+        "color": true,
+        "soro": false,
+        "comingsoon": false,
+        "_created": "2014-11-11 12:45:34"
+    },
+    {
+        "id": 22345678,
+        "name": "Sorority Charm Bracelet",
+        "price": 350,
+        "category": "Necklace",
+        "count": "7",
+        "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
+        "image": "https://res.cloudinary.com/lokiddo/image/upload/v1628900593/Kustom%20Charmz/wuu8wl5pszeonioaqupq.jpg",
+        "images": [
+            {
+                "id": 1,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628900593/Kustom%20Charmz/wuu8wl5pszeonioaqupq.jpg"
+            },
+            {
+                "id": 2,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628900593/Kustom%20Charmz/rxqvekumjupqnwsupk0t.jpg"
+            },
+            {
+                "id": 3,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628900593/Kustom%20Charmz/gdz2ltl8ce2idkcd15zh.jpg"
+            },
+            {
+                "id": 4,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628900592/Kustom%20Charmz/qncakicezuutwxotwbfr.jpg"
+            },
+            {
+                "id": 5,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1628900592/Kustom%20Charmz/y4lcgqhe06wpn3wd3yyq.jpg"
+            }
+        ],
+        "color":false,
+        "soro": true,
+        "comingsoon": false,
+        "_created": "2014-11-11 12:45:34"
+    },
+    {
+        "id": 32345678,
+        "name": "Kustom Apple Bracelet",
+        "price": 490,
+        "category": "Apple Watch Bracelet",
+        "count": "9",
+        "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
+        "image": "https://res.cloudinary.com/lokiddo/image/upload/v1629333864/Kustom%20Charmz/uu24ntdhrrooqg6m1ihm.jpg",
+        "images": [
+            {
+                "id": 1,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1629333864/Kustom%20Charmz/lodnqwr2dmgrxvbvvgf2.jpg"
+            },
+            {
+                "id": 2,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1629333863/Kustom%20Charmz/mlxthy1avowlqwnxa0a2.jpg"
+            },
+            {
+                "id": 3,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1629333863/Kustom%20Charmz/zjwzn6lahswetdjh84jl.jpg"
+            },
+            {
+                "id": 4,
+                "url": "https://res.cloudinary.com/lokiddo/image/upload/v1629333864/Kustom%20Charmz/uu24ntdhrrooqg6m1ihm.jpg"
+            }
+            
+            
+        ],
+        "color": false,
+        "soro": false,
+        "comingsoon": true,
+        "_created": "2014-11-11 12:45:34"
+    }
+]

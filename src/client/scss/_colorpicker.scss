@@ -1,0 +1,46 @@
+@import "./variables";
+
+.colorpicker {
+    display:  flex;
+    .circle {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-color: $secondary;
+        border-radius: 50%;
+        
+    }
+
+    .circle:hover {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+    }
+
+    
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: lightblue;
+    }
+
+    .pink {
+        background-color: pink;
+    }
+    .red {
+        background-color: red;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+    .orange {
+        background-color: orange;
+    }
+
+
+}

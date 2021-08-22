@@ -5,3 +5,4 @@ node_modules/
 dist/
 public/js/app.js
 .env
+stripe.exe
