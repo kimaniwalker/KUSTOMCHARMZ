@@ -1,7 +1,8 @@
 import express from 'express';
 require('dotenv').config()
 const stripe = require('stripe')(process.env.STRIPESKTEST);
-const YOUR_DOMAIN = 'http://kustom-charmz.herokuapp.com';
+const YOUR_DOMAIN = 'http://kustom-charmz.herokuapp.com/success';
+const YOUR_DOMAIN2 = 'http://kustom-charmz.herokuapp.com/cart';
 import { newOrder } from '../../utils/mail';
 
 
@@ -25,8 +26,8 @@ router.post('/create-checkout-session', async (req, res) => {
     shipping_address_collection: {
       allowed_countries: ['US', 'CA']
     },
-    success_url: `${YOUR_DOMAIN}success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${YOUR_DOMAIN}cart`,
+    success_url: `${YOUR_DOMAIN}?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${YOUR_DOMAIN2}`,
 
   });
   console.log(session)
