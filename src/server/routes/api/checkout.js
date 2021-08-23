@@ -25,8 +25,8 @@ router.post('/create-checkout-session', async (req, res) => {
     shipping_address_collection: {
       allowed_countries: ['US', 'CA']
     },
-    success_url: `${YOUR_DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${YOUR_DOMAIN}/cart`,
+    success_url: `${YOUR_DOMAIN}success?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${YOUR_DOMAIN}cart`,
 
   });
   console.log(session)
