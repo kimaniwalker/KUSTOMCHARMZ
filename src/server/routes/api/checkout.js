@@ -25,8 +25,8 @@ router.post('/create-checkout-session', async (req, res) => {
     shipping_address_collection: {
       allowed_countries: ['US', 'CA']
     },
-    success_url: 'https://www.kustom-charmz.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}',
-    cancel_url: 'https://www.kustom-charmz.herokuapp.com/cart',
+    success_url: "https://www.kustom-charmz.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}",
+    cancel_url: "https://www.kustom-charmz.herokuapp.com/cart",
 
   });
   console.log(session)
