@@ -15,7 +15,7 @@ export default function Header(props) {
                             <img src={logo} height="65" alt=""></img>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                            <span className="navbar-toggler-icon"><i className="bi bi-list"></i></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-sm-center text-center">
@@ -32,7 +32,7 @@ export default function Header(props) {
 
                             </ul>
                             <span className="navbar-text justify-content-center align-items-center text-center d-flex">
-                                <a href="/trackorder"><i className="bi bi-truck p-2"></i></a>
+                                <a href="https://tools.usps.com/go/TrackConfirmAction_input" target="_blank"><i className="bi bi-truck p-2"></i></a>
                                 <a href="/login"><i className="bi bi-person p-2"></i></a>
                                 <a href="/cart"><i className="bi bi-cart4 p-2"></i></a>
                             </span>

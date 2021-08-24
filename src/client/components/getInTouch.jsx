@@ -49,28 +49,28 @@ export default function Getintouch(props) {
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-phone"></i><p className="p-4 text-secondary d-inline">205-603-8724</p>
+                                <i className="bi bi-phone"></i><p className="p-4 text-secondary d-inline">205-603-8724</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-envelope"></i><p className="p-4 text-secondary d-inline">admin@k3charmz.com</p>
+                                <i className="bi bi-envelope"></i><p className="p-4 text-secondary d-inline">admin@k3charmz.com</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-geo-alt"></i><p className="p-4 text-secondary d-inline">Birmingham, AL</p>
+                                <i className="bi bi-geo-alt"></i><p className="p-4 text-secondary d-inline">Birmingham, AL</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i class="bi bi-instagram pr-4 pt-4 pb-4"></i>
-                                <i class="bi bi-linkedin p-4"></i>
-                                <i class="bi bi-facebook p-4"></i>
-                                <i class="bi bi-twitter p-4"></i>
+                                <i className="bi bi-instagram pr-4 pt-4 pb-4"></i>
+                                <i className="bi bi-linkedin p-4"></i>
+                                <i className="bi bi-facebook p-4"></i>
+                                <i className="bi bi-twitter p-4"></i>
 
                             </div>
 
@@ -82,23 +82,23 @@ export default function Getintouch(props) {
                             <h2 className="display-5 text-primary">Leave Us A Message</h2>
                         </div>
                         
-                            <div class="mb-3">
-                                <label for="Full Name" class="form-label text-secondary">Full Name</label>
-                                <input onChange={(e) => setName(e.target.value)} type="text" value={name} class="form-control" id="name" placeholder="Jania Cosby" />
+                            <div className="mb-3">
+                                <label htmlFor="Full Name" className="form-label text-secondary">Full Name</label>
+                                <input onChange={(e) => setName(e.target.value)} type="text" value={name} className="form-control" id="name" placeholder="Jania Cosby" />
                             </div>
-                            <div class="mb-3">
-                                <label for="Subject" class="form-label text-secondary">Subject</label>
-                                <input onChange={(e) => setSubject(e.target.value)} type="text" value={subject} class="form-control" id="Subject" placeholder="VIP Subscription Inquiry" />
+                            <div className="mb-3">
+                                <label htmlFor="Subject" className="form-label text-secondary">Subject</label>
+                                <input onChange={(e) => setSubject(e.target.value)} type="text" value={subject} className="form-control" id="Subject" placeholder="VIP Subscription Inquiry" />
                             </div>
-                            <div class="mb-3">
-                                <label for="Email" class="form-label text-secondary">Email</label>
-                                <input onChange={(e) => setEmail(e.target.value)} type="email" class="form-control" value={email} id="Email" placeholder="name@example.com" />
+                            <div className="mb-3">
+                                <label htmlFor="Email" className="form-label text-secondary">Email</label>
+                                <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" value={email} id="Email" placeholder="name@example.com" />
                             </div>
-                            <div class="mb-3">
-                                <label for="Message" class="form-label text-secondary">Message</label>
-                                <textarea onChange={(e) => setMessage(e.target.value)} class="form-control" id="Message" value={message} rows="3" placeholder="Leave A Custom Message"></textarea>
+                            <div className="mb-3">
+                                <label htmlFor="Message" className="form-label text-secondary">Message</label>
+                                <textarea onChange={(e) => setMessage(e.target.value)} className="form-control" id="Message" value={message} rows="3" placeholder="Leave A Custom Message"></textarea>
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                               
                             <form onSubmit={(e) => handleSubmit(e)}>
                                 {name && email && subject && message  ? <btn type="submit" onClick={(e) => handleSubmit(e)} className="btn btn-primary w-100">Submit</btn> : <button disabled type="submit" onClick={(e) => handleSubmit(e)} className="btn btn-primary w-100" disabled>Submit</button> }

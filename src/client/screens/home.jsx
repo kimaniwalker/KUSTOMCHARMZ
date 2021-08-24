@@ -6,13 +6,21 @@ import Banner from '../components/banner'
 import Subscribe from '../components/subscribe'
 import Getintouch from '../components/getInTouch'
 import Footer from '../components/footer'
+import SEO from '../components/seo'
+import { motion } from 'framer-motion'
 
 
 export default function Home(props) {
     
 
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
+        <motion.div initial={{opacity: 1}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 2}}>
+        <SEO title='Home Page'/>
             <Header />
             <Homebanner />
             <ProductThumbnail title={'Most Loved Items'} />
@@ -20,7 +28,7 @@ export default function Home(props) {
             <Subscribe />
             <Getintouch />
             <Footer />
-           
+        </motion.div>   
             
         </>
     )

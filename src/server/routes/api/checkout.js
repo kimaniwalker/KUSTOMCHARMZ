@@ -10,41 +10,55 @@ const router = express.Router();
 
 router.post('/create-checkout-session', async (req, res) => {
 
-  const session = await stripe.checkout.sessions.create({
-    payment_method_types: ['card'],
-    allow_promotion_codes: true,
-    line_items:
-      req.body.items
-    ,
-    metadata: {
-      'custom_message': req.body.message,
-      'shipping_total': req.body.shipping,
-    },
-    mode: 'payment',
-    shipping_rates: [req.body.shipping_rate],
-    shipping_address_collection: {
-      allowed_countries: ['US', 'CA']
-    },
-    success_url: "https://kustom-charmz.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}",
-    cancel_url: "https://kustom-charmz.herokuapp.com/cart",
 
-  });
-  console.log(session)
-  res.json(session.url)
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      allow_promotion_codes: true,
+      line_items:
+        req.body.items
+      ,
+      metadata: {
+        'custom_message': req.body.message,
+        'shipping_total': req.body.shipping,
+      },
+      mode: 'payment',
+      shipping_rates: [req.body.shipping_rate],
+      shipping_address_collection: {
+        allowed_countries: ['US', 'CA']
+      },
+      success_url: "https://kustom-charmz.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "https://kustom-charmz.herokuapp.com/cart",
+
+    });
+    console.log(session)
+    res.json(session.url)
+  } catch (error) {
+    res.sendStatus(500).send(error)
+  }
+
 });
 
 router.post('/retrieve-checkout-session', async (req, res) => {
 
-  const session = await stripe.checkout.sessions.retrieve(
-    req.body.session_id
-  )
-  console.log(session)
-  res.json(session)
+  try {
+    const session = await stripe.checkout.sessions.retrieve(
+      req.body.session_id
+    )
+    console.log(session)
+    res.json(session)
+  } catch (error) {
+    res.sendStatus(500).send(error)
+  }
+
+
+
 });
 
 
 
 router.post('/webhook', async (req, res) => {
+
 
   const event = req.body;
 

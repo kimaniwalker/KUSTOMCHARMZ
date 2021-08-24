@@ -5,6 +5,7 @@ import Getintouch from '../getInTouch';
 import Header from '../header'
 import Loading from '../loading';
 import cartCtx from '../../utils/cart-modules/cart-context'
+import SEO from '../seo';
 
 export default function Success(props) {
 
@@ -16,7 +17,7 @@ export default function Success(props) {
 
     React.useEffect(() => {
         getSession(session_id)
-        /* ctx.clearCartItems() */
+        ctx.clearCartItems()
     }, [])
 
     const getSession = async (session_id) => {
@@ -40,7 +41,7 @@ export default function Success(props) {
 
     if (session == null) {
         return (
-            <>
+            <>  
                 <Header />
                 <Loading />
             </>
@@ -51,7 +52,8 @@ export default function Success(props) {
 
 
         return (
-            <>
+            <>  
+            <SEO title='Success Page'/>
                 <Header />
                 <Banner title={'Great News ! Your Order Was Successful'} message={`Thank you for shopping at Kustom Charmz ${session.shipping.name}. We appreciate your business! If you have any questions, please feel free to reach out to us. You should receive an email with your order details shortly at ${session.customer_details.email}.`} />
                 

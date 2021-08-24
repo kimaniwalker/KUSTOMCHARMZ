@@ -2,6 +2,9 @@ import React from 'react'
 import Header from '../components/header'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
+import SEO from '../components/seo'
+import { motion } from 'framer-motion'
+
 
 
 export default function About(props) {
@@ -9,6 +12,8 @@ export default function About(props) {
 
     return (
         <>
+       <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 2}}>
+        <SEO title='About Us'/>
             <Header />
             <Banner title='Looking To Get To Know More About Our Brand?' message='Well share our story and everything else you may want to know about us here' />
             <div className="container">
@@ -22,7 +27,7 @@ export default function About(props) {
                 </div>
             </div>
             <Footer />
-           
+         </motion.div> 
             
         </>
     )

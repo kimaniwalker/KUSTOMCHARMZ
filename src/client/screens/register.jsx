@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { register } from '../utils/register';
 import logo from '../assets/1.png'
+import SEO from '../components/seo';
 
 
 export default function Register(props) {
@@ -56,6 +57,7 @@ export default function Register(props) {
 
     return (
         <>
+        <SEO title='Register'/>
             <div className="container">
                 <form>
 

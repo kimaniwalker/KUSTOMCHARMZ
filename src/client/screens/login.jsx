@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { login, checkLogin, getUser } from '../utils/auth';
 import { useHistory, useLocation, useRouteMatch, Redirect } from 'react-router-dom'
 import logo from '../assets/1.png'
+import SEO from '../components/seo';
 
 export default function Login(props) {
 
@@ -80,6 +81,7 @@ export default function Login(props) {
 
         return (
             <>
+            <SEO title='Login'/>
                 <div className="container">
                     <form onSubmit={handleSubmit}>
                         <div className="row align-items-center justify-content-center py-4">

@@ -21,7 +21,9 @@ export default function SingleProduct(props) {
     const [selectedColor, setColor] = React.useState(null)
     const [selectedSoro, setSoro] = React.useState(null)
 
-
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const getColor = (color) => {
         setColor(color)
@@ -67,8 +69,8 @@ export default function SingleProduct(props) {
                                 <Coloroptions getColor={getColor} />
                             </div>
                             <div className="row p-2">
-                                <div class="d-grid gap-2">
-                                    {selectedColor ? <btn href="#" class="btn btn-primary" onClick={addItem} >Add to Cart</btn> : null}
+                                <div className="d-grid gap-2">
+                                    {selectedColor ? <button href="#" className="btn btn-primary" onClick={addItem} >Add to Cart</button> : null}
 
                                 </div>
 
@@ -78,7 +80,7 @@ export default function SingleProduct(props) {
                         {product[0].soro ? <div className="container">
                            
                             <div className="row py-4 px-2">
-                                <select onChange={(e) => setSoro(e.target.value)} class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <select onChange={(e) => setSoro(e.target.value)} className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                     <option defaultValue hidden>Select A Sorority</option>
                                     <option value="Alpha Kappa Alpha Sorority, Inc.">Alpha Kappa Alpha Sorority, Inc.</option>
                                     <option value="Delta Sigma Theta">Delta Sigma Theta</option>
@@ -89,8 +91,8 @@ export default function SingleProduct(props) {
                                 </select>
                             </div>
                             <div className="row p-2">
-                                <div class="d-grid gap-2">
-                                    {selectedSoro ? <btn href="#" class="btn btn-primary" onClick={addItemSoro} >Add to Cart</btn> : null}
+                                <div className="d-grid gap-2">
+                                    {selectedSoro ? <button href="#" className="btn btn-primary" onClick={addItemSoro} >Add to Cart</button> : null}
 
                                 </div>
 
