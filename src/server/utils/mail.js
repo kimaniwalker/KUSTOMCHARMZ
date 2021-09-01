@@ -7,7 +7,7 @@ function sendEmail(to, from, subject, content, name) {
     sgMail.setApiKey(process.env.SENDGRID);
     let msg = {
         to,
-        from,
+        "from":"no-reply-admin@kustomcharmz.com",
         subject,
         html: `<h2>Hello Kustom Charmz</h2>
         <p><strong>${subject}</strong></p>
@@ -25,8 +25,8 @@ function newOrder(orderDetails) {
 
     sgMail.setApiKey(process.env.SENDGRID);
     let msg = {
-        "to": 'admin@key2design.io',
-        "from": 'kimaniwalker@gmail.com',
+        "to": 'admin@kustomcharmz.com',
+        "from": 'no-reply-admin@kustomcharmz.com',
         "subject": 'You Have A New Order',
         "html": `<h1>Hello Kustom Charmz</h1>
         <p><strong>${orderDetails.shippingInfo.name}</strong> just bought something</p>

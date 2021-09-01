@@ -1,11 +1,12 @@
 import mysql from 'mysql';
+require('dotenv').config();
 
 const pool = mysql.createPool({
     connectionLimit: 10,
-    password: 'testuser',
-    user: 'testUser',
-    database: 'test',
-    port:'3306'
+    password: process.env.DB_PASSWORD,
+    user: process.env.DB_USER,
+    database: process.env.DB_SCHEMA,
+    port: process.env.DB_PORT
 });
 
 let users = {} ;

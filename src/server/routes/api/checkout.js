@@ -1,7 +1,7 @@
 import express from 'express';
 require('dotenv').config()
 const stripe = require('stripe')(process.env.STRIPESKTEST);
-const YOUR_DOMAIN = "https://www.kustom-charmz.herokuapp.com";
+const YOUR_DOMAIN = "https://www.kustomcharmz.com";
 import { newOrder } from '../../utils/mail';
 
 
@@ -27,14 +27,17 @@ router.post('/create-checkout-session', async (req, res) => {
       shipping_address_collection: {
         allowed_countries: ['US', 'CA']
       },
-      success_url: "https://kustom-charmz.herokuapp.com/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "https://kustom-charmz.herokuapp.com/cart",
-
-    });
+      success_url: `${YOUR_DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${YOUR_DOMAIN}/cart`,
+    },
+      {
+        stripeAccount: 'acct_1JSByuLJedda0w0c',
+      }
+    );
     console.log(session)
     res.json(session.url)
   } catch (error) {
-    res.sendStatus(500).send(error)
+    console.log(error)
   }
 
 });
@@ -48,7 +51,7 @@ router.post('/retrieve-checkout-session', async (req, res) => {
     console.log(session)
     res.json(session)
   } catch (error) {
-    res.sendStatus(500).send(error)
+    console.log(error)
   }
 
 

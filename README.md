@@ -1,4 +1,4 @@
-# 📜 Barebones React/Sass/Express/TypeScript Boilerplate
+# 📜 KUSTOM CHARMZ ECOMMERCE SITE
 
 &nbsp;
 
@@ -16,11 +16,7 @@
 &nbsp;
 
 ## 🧠 Purpose
-
-This project is a starting point for a TypeScript based React app that also has a local API server using Express. It serves as an excellent "sandbox" for learning the workflow of a full stack web application from our Bootcamp. There is no connection to any kind of database, but our videos and course cover MySQL and its integration into Node and Express.
-
-Keep in mind there isn't much quality of life in this Boilerplate code, you'll miss your "hot reloading" feature of Create React App, the ability to import pictures as modules, and all the other fun stuff the big frameworks have already coded for you. They're all still accessible, but you'd have to learn to add them yourself! Feel free to ping me (`@Cool Hand Luke`) in our Discord channel if you're a student and are interested in a particular feature you'd like to see a tutorial on. 😎
-
+This project was created for a client needing to launch a ecommerce platform for her handmade jewelry. The project utilizes React , Node & Express JS , and is integrated with Stripe & Sendgrid for payment processing and automated email marketing campaigns. The project also utilizes passport authentication as well connected to a mySQL database to store whatever you like.
 &nbsp;
 
 ## 👟 Running the Project
@@ -34,7 +30,7 @@ If you're new or are interested in the steps and their purpose, then let's dive 
 First:
 
 ```bash
-git clone https://github.com/covalence-io/barebones-react-typescript-express.git YOUR_PROJECT_NAME
+git clone https://github.com/kimaniwalker/KUSTOMCHARMZ.git YOUR_PROJECT_NAME
 ```
 
 This command will "clone" this project's code to _our_ computers! It will default to the name of the GitHub repository, but you can rename it by providing an additional argument, like `YOUR_PROJECT_NAME` in the above example. It will create a folder by that name, and copy all the juicy code into it for you!
@@ -82,7 +78,7 @@ This command will start the project for us! It will sometimes take a bit, depend
 
 &nbsp;
 
-**The server will start on port 3000 (http://localhost:3000) and should default to a "Hello World" app!**
+**The server will start on port 3000 (http://localhost:3000) !**
 
 &nbsp;
 
@@ -116,20 +112,27 @@ This will be where we code all things related to our React app and what a user w
 
 #### 🙌 Styling the App
 
-The `src/client` configuration will also build the SASS files found at `src/client/scss` directory. The `index.tsx` imports the `app.scss` file which already includes an import for Bootstrap v4. Notice how the Bootstrap import in the `src/client/scss/app.scss` file is at the _bottom_ of the file. This is because our expected overrides are expected above that import. Think of it as "here's my custom Bootstrap injections 💉 .. and now load Bootstrap with my changes, mwahaha!"
+The `src/client` configuration will also build the SASS files found at `src/client/scss` directory. The `index.js` imports the `app.scss` file which already includes an import for Bootstrap v5. Notice how the Bootstrap import in the `src/client/scss/app.scss` file is at the _bottom_ of the file. This is because our expected overrides are expected above that import. Think of it as "here's my custom Bootstrap injections 💉 .. and now load Bootstrap with my changes, mwahaha!"
 
-Thankfully, you can write normal CSS just as you like! Add class selectors, element selecotrs, and id selectors to your hearts 💖 content. There are, however, several SASS tricks you can research on Google, Stack Overflow, Youtube, and etc. Covalence thanks to Matt Landers has two entry-level videos discussing SASS and its advantages over regular CSS:
-
--   [Let's Get Sassy](https://youtu.be/s9mkU-a0nPo) which is an intro to SASS as a concept, its advantages over regular CSS, how to add it to a project (remember you don't need to do that here), and some tricks to using it.
--   [Overriding Bootstrap Variables](https://youtu.be/QP3fG31CdMg) which goes over the basics of ... overriding Bootstrap variables! You'll notice this boilerplate already provides a basic example of that:
+Thankfully, you can write normal CSS just as you like! Add class selectors, element selecotrs, and id selectors to your hearts 💖 content. There are, however, several SASS tricks you can research on Google, Stack Overflow, Youtube, and etc. In the `_varibales.scss` file you can see that we have overwritten some of the bootstrap variables.
 
 ```css
+$primary: #964B00;
+$secondary: #BC671B;
+$secondary2: #40505a;
+$secondary3: #b68666;
+$dark: #292b2c;
+$light: #f3f3f3;
+
+
 $theme-colors: (
-	'primary': #0091ea //Covalence Blue!  :D
+    'primary': $secondary2 ,
+    'secondary': $primary
 );
+
 ```
 
-This takes the Bootstrap variable `primary` _anywhere_ you use it and replaces it with a new color code of Covalence Blue! Add `bg-primary`, `text-primary`, and `border-primary` to some elements in your TSX and notice how the regular deep blue Bootstrap color is now replaced by our custom one. You can override all the color-specific keywords using this to add your own custom feel to your React Bootstrap app!
+This takes the Bootstrap variable `primary` _anywhere_ you use it and replaces it with a new color code of Covalence Blue! Add `bg-primary`, `text-primary`, and `border-primary` to some elements in your JSX and notice how the regular deep blue Bootstrap color is now replaced by our custom one. You can override all the color-specific keywords using this to add your own custom feel to your React Bootstrap app!
 
 &nbsp;
 
@@ -239,6 +242,5 @@ Don't stress about the guts of these properties, just focus on their general pur
 
 ## 🔐 Closing Remarks
 
-There are a lot of moving parts even in this _barebones_ boilerplate! This is why we provide it to you, the student, as a jumping off point. We want you to focus on coding your server code and React code. Not mess with configuration files and project setup. Keep in mind **this is not the be-all-end-all** boilerplate. You can learn what features you miss from things like `NextJS`, `GatsbyJS`, and `Create React App` and figure out how to add them to this one to make it your go-to starter.
-
-Code, code, and code. Build shit and deploy. Get projects up and running, conceptually finished, and no matter how dumb. You will always learn something new. Challenge yourself to use different CSS Kits and libraries. Try other database connectors. Try React libraries like Redux. Even if you aren't getting paid for it, it's still valuable experience for you. So happy hacking, and have some fun!
+There are a lot of moving parts even in this Ecommerce boilerplate! 
+Happy hacking, and have some fun!

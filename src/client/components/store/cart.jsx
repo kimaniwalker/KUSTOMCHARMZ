@@ -16,7 +16,7 @@ export default function Cart(props) {
     const [shipping, setShipping] = React.useState(8);
     const [message, setMessage] = React.useState('');
     const [promocode, setCode] = React.useState('');
-    const [shipping_rate, setRate] = React.useState('shr_1JQGE9H9WDnn97wq2aToY9XK')
+    const [shipping_rate, setRate] = React.useState('shr_1JSRDmLJedda0w0c2foMRu87')
     const orderTotal = formatCurrency(total + parseInt(shipping));
     const price = total + parseInt(shipping);
     
@@ -24,19 +24,19 @@ export default function Cart(props) {
     useEffect(() => {
         if ( total >= 100 ) {
             setShipping(0)
-            setRate('shr_1JQGF8H9WDnn97wqzLHpfJRo')
+            setRate('shr_1JSRCwLJedda0w0czlgiFsBw')
         }
 
-    }, [])
+    }, [shipping])
 
     const handleShipping = (rate, total) => {
         if (rate == 0 || total > 100) {
             setShipping(0)
-            setRate('shr_1JQGF8H9WDnn97wqzLHpfJRo')
+            setRate('shr_1JSRCwLJedda0w0czlgiFsBw')
         } else if ( rate == 30) {
-            setRate('shr_1JQGBlH9WDnn97wq0fHThG58')
+            setRate('shr_1JSRFyLJedda0w0c1rZDRjzP')
         } else if ( rate == 8 ) {
-            setRate('shr_1JQGE9H9WDnn97wq2aToY9XK')
+            setRate('shr_1JSRDmLJedda0w0c2foMRu87')
         }
     }
 
@@ -75,7 +75,7 @@ export default function Cart(props) {
                 method: 'POST',
                 body: JSON.stringify({items: items, message: message , shipping: shipping, shipping_rate: shipping_rate})
                 /* body: JSON.stringify({ name: "Kustom Charms", price, message, shipping, cart: JSON.stringify(items) }) */,
-                headers: new Headers({ "Content-Type": "application/json" })
+                headers: new Headers({ "Content-Type": "application/json", "Stripe-Account": "acct_1JSByuLJedda0w0c" })
             });
             let sessionResponse = await res.json();
             console.log(sessionResponse);
@@ -238,7 +238,7 @@ export default function Cart(props) {
                                     </h2>
                                     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body"><div className="mb-3">
-                                            <label htmlFor="exampleFormControlTextarea1" className="form-label">Leave A Custom Message htmlFor Us (Max 500 Charachters)</label>
+                                            <label htmlFor="exampleFormControlTextarea1" className="form-label">Leave A Custom Message For Us (Max 500 Charachters)</label>
                                             <textarea maxLength="500" onChange={(e) => setMessage(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div></div>
                                     </div>

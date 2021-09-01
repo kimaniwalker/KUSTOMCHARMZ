@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./typography";
+
+.getInTouch {
+    
+    @media only screen and (max-width: 380px) {
+        #email,#phone,#city {
+          font-size: .85rem;
+        }
+      }
+    
+}

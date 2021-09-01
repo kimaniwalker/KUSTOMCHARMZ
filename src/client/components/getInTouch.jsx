@@ -1,6 +1,7 @@
 import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../scss/_getInTouch.scss'
 
 export default function Getintouch(props) {
 
@@ -9,6 +10,7 @@ export default function Getintouch(props) {
     const [subject, setSubject] = React.useState('')
     const [message, setMessage] = React.useState('')
     const notify = () => toast("Thank you! Your message has been submitted");
+    const notifyError = () => toast.error("Something Went Wrong. Try Again");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,6 +31,7 @@ export default function Getintouch(props) {
             notify()
             
         } catch (e) {
+            notifyError();
             console.log(e)
         }
     }
@@ -38,6 +41,7 @@ export default function Getintouch(props) {
     return (
         <>
             <ToastContainer />
+            <main className="getInTouch">
             <div className="container">
                 <div className="row m-4">
                     <div className="col-12 col-lg-6 col-xl-6 bg-light p-4">
@@ -49,19 +53,19 @@ export default function Getintouch(props) {
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i className="bi bi-phone"></i><p className="p-4 text-secondary d-inline">205-603-8724</p>
+                                <i className="bi bi-phone"></i><p id="phone" className="p-4 text-secondary d-inline">205-603-8724</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i className="bi bi-envelope"></i><p className="p-4 text-secondary d-inline">admin@k3charmz.com</p>
+                                <i className="bi bi-envelope"></i><p id="email" className="p-4 text-secondary d-inline">admin@kustomcharmz.com</p>
                             </div>
 
                         </div>
                         <div className="row py-3">
                             <div className="col-12">
-                                <i className="bi bi-geo-alt"></i><p className="p-4 text-secondary d-inline">Birmingham, AL</p>
+                                <i className="bi bi-geo-alt"></i><p id="city" className="p-4 text-secondary d-inline">Birmingham, AL</p>
                             </div>
 
                         </div>
@@ -109,6 +113,7 @@ export default function Getintouch(props) {
                     </div>
                 </div>
             </div>
+            </main>
         </>
     )
 }

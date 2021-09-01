@@ -16,7 +16,7 @@ export default function Success(props) {
     const ctx = React.useContext(cartCtx)
 
     React.useEffect(() => {
-        getSession(session_id)
+       /*  getSession(session_id) */
         ctx.clearCartItems()
     }, [])
 
@@ -38,28 +38,15 @@ export default function Success(props) {
     }
 
 
-
-    if (session == null) {
-        return (
-            <>  
-                <Header />
-                <Loading />
-            </>
-        )
-    } else {
-
-
-
-
         return (
             <>  
             <SEO title='Success Page'/>
                 <Header />
-                <Banner title={'Great News ! Your Order Was Successful'} message={`Thank you for shopping at Kustom Charmz ${session.shipping.name}. We appreciate your business! If you have any questions, please feel free to reach out to us. You should receive an email with your order details shortly at ${session.customer_details.email}.`} />
+                <Banner title={'Great News ! Your Order Was Successful'} message={`Thank you for shopping at Kustom Charmz. We appreciate your business! If you have any questions, please feel free to reach out to us. You should receive an email with your order details shortly`} />
                 
                 <Getintouch />
                 <Footer />
             </>
         )
-    }
+    
 }

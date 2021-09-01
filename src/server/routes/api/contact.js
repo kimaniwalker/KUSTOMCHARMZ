@@ -7,7 +7,7 @@ let router = Router();
 
 router.post('/', (req, res) => {
 
-  sendEmail('admin@key2design.io', req.body.email, req.body.subject , req.body.content, req.body.name) 
+  sendEmail('admin@kustomcharmz.com', req.body.email, req.body.subject , req.body.content, req.body.name) 
     .then((response) => {
       console.log(response);
       res.send(response);

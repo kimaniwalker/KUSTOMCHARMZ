@@ -10,7 +10,8 @@ export default function Subscribe(props) {
     const [last, setLast] = React.useState('')
     const [email, setEmail] = React.useState('')
     const [submitted, setSubmitted] = React.useState(false)
-    const notify = () => toast("Thank you htmlFor subscribing !");
+    const notify = () => toast("Thank you For subscribing !");
+    const notifyError = () => toast.error("Something Went Wrong. Try Again");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -30,6 +31,7 @@ export default function Subscribe(props) {
             notify()
 
         } catch (e) {
+            notifyError()
             console.log(e)
         }
     }

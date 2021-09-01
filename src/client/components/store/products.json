@@ -2,7 +2,7 @@
     {
         "id": 12345678,
         "name": "Kustom Charm Bracelet",
-        "price": 290,
+        "price": 20,
         "category": "Bracelets",
         "count": "4",
         "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
@@ -37,7 +37,7 @@
     {
         "id": 22345678,
         "name": "Sorority Charm Bracelet",
-        "price": 350,
+        "price": 30,
         "category": "Necklace",
         "count": "7",
         "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
@@ -72,7 +72,7 @@
     {
         "id": 32345678,
         "name": "Kustom Apple Bracelet",
-        "price": 490,
+        "price": 30,
         "category": "Apple Watch Bracelet",
         "count": "9",
         "description": "This stunning snake chain bracelet is a sophisticated spin on the classic friendship bracelet. Hand-finished in polished sterling silver, it features interchangeable end caps set with shimmering stones and an innovative sliding clasp that makes it easy to adjust. The perfect present for friends and loved ones, it can be worn as it is or filled with your favorite Pandora charms. Wear the sliding clasp on different Moments bracelets to create a contemporary two-tone look.",
