@@ -1,8 +1,11 @@
 import React from 'react'
 import logo from '../assets/1.png'
+import cartCtx from '../utils/cart-modules/cart-context'
 import '../scss/_header.scss'
 
 export default function Header(props) {
+
+    const { cart } = React.useContext(cartCtx)
 
 
     return (
@@ -34,7 +37,7 @@ export default function Header(props) {
                             <span className="navbar-text justify-content-center align-items-center text-center d-flex">
                                 <a href="https://tools.usps.com/go/TrackConfirmAction_input" target="_blank"><i className="bi bi-truck p-2"></i></a>
                                 <a href="/login"><i className="bi bi-person p-2"></i></a>
-                                <a href="/cart"><i className="bi bi-cart4 p-2"></i></a>
+                                <a href="/cart"><i className="bi bi-cart4 p-2"></i><span id="cart-total">({cart.length})</span></a>
                             </span>
                         </div>
                     </div>

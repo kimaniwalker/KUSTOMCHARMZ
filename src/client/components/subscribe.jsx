@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
 export default function Subscribe(props) {
 
@@ -36,19 +35,19 @@ export default function Subscribe(props) {
         }
     }
 
-    useEffect(() => {
 
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
-            myModal.toggle('show')
+
+
+    useEffect(() => {
 
     }, [])
 
-        if (submitted) {
-            return null
-        } else {
-            return (
+    if (submitted) {
+        return null
+    } else {
+        return (
             <>
-            <ToastContainer />
+                <ToastContainer />
                 <div className="container-fluid">
                     <div className="row">
                         <button type="button" className="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -75,21 +74,21 @@ export default function Subscribe(props) {
                                     <div className="modal-body">
                                         <div className="mb-3">
                                             <label htmlFor="First Name" className="form-label">First Name <code>(Required)</code></label>
-                                            <input onChange={(e) => setFirst(e.target.value)} value={first} type="text" className="form-control" id="first_name" placeholder="Tahmirah" />
+                                            <input onChange={(e) => setFirst(e.target.value)} value={first} type="text" className="form-control" id="first_name" placeholder="" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="Last" className="form-label">Last Name <code>(Required)</code></label>
-                                            <input onChange={(e) => setLast(e.target.value)} type="text" value={last} className="form-control" id="last_name" placeholder="Cosby" />
+                                            <input onChange={(e) => setLast(e.target.value)} type="text" value={last} className="form-control" id="last_name" placeholder="" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="Email" className="form-label">Email <code>(Required)</code></label>
-                                            <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" className="form-control" id="email" placeholder="tcosby25@gmail.com" />
+                                            <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" className="form-control" id="email" placeholder="" />
                                         </div>
                                     </div>
                                     <div className="modal-footer">
                                         <div className="col-12">
                                             <form onSubmit={(e) => handleSubmit(e)}>
-                                                {email ?<button type="submit" className="btn btn-primary w-100">Subscribe</button> : <button type="submit" className="btn btn-primary w-100" disabled>Subscribe</button>  }
+                                                {email ? <button type="submit" className="btn btn-primary w-100">Subscribe</button> : <button type="submit" className="btn btn-primary w-100" disabled>Subscribe</button>}
                                             </form>
 
                                         </div>
@@ -107,8 +106,8 @@ export default function Subscribe(props) {
                 </div>
             </>
         )
-        }
-        
-    
+    }
+
+
 
 }

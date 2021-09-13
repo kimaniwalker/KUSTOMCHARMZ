@@ -38,5 +38,46 @@
         
     }
 
+    #cart-total {
+        position: absolute;
+        right: 20px;
+    }
+
+
+    @media only screen and (max-width: 992px) {
+        #cart-total {
+          position: absolute;
+          right: 40%;
+        }
+      }
+
+      @media only screen and (max-width: 540px) {
+        #cart-total {
+          position: absolute;
+          right: 35%;
+        }
+      }
+
+      @media only screen and (max-width: 414px) {
+        #cart-total {
+          position: absolute;
+          right: 32%;
+        }
+      }
+
+
+      @media only screen and (max-width: 380px) {
+        #cart-total {
+          position: absolute;
+          right: 29%;
+        }
+      }
+
+      @media only screen and (max-width: 320px) {
+        #cart-total {
+          position: absolute;
+          right: 27%;
+        }
+      }
 
 }
