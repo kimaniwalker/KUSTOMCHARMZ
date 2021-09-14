@@ -23,7 +23,7 @@ export default function Home(props) {
         <SEO title='Home Page'/>
             <Header />
             <Homebanner />
-            <ProductThumbnail title={'Most Loved Items'} />
+            <ProductThumbnail title={'Featured Items'} />
             <Banner title='FREE SHIPPING ON ALL ORDERS OVER $100' message='*All orders at The Kustom Charmz Boutique are beautifully boxed and shipped priority within 3-5 business days.  This offer does not apply to express and international orders.' />
             <Subscribe />
             <Getintouch />

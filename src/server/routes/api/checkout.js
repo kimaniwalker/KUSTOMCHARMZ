@@ -1,6 +1,6 @@
 import express from 'express';
 require('dotenv').config()
-const stripe = require('stripe')(process.env.STRIPESKTEST);
+const stripe = require('stripe')(process.env.STRIPESKLIVE);
 const YOUR_DOMAIN = "https://www.kustomcharmz.com";
 import { newOrder } from '../../utils/mail';
 
