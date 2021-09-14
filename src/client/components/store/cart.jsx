@@ -16,7 +16,7 @@ export default function Cart(props) {
     const [shipping, setShipping] = React.useState(8);
     const [message, setMessage] = React.useState('');
     const [promocode, setCode] = React.useState('');
-    const [shipping_rate, setRate] = React.useState('shr_1JSRDmLJedda0w0c2foMRu87')
+    const [shipping_rate, setRate] = React.useState('shr_1JZafdLJedda0w0c0Eoxw99x')
     const orderTotal = formatCurrency(total + parseInt(shipping));
     const price = total + parseInt(shipping);
 
@@ -24,7 +24,7 @@ export default function Cart(props) {
     useEffect(() => {
         if (total >= 100) {
             setShipping(0)
-            setRate('shr_1JSRCwLJedda0w0czlgiFsBw')
+            setRate('shr_1JZafPLJedda0w0c1smQUazr')
         }
 
     }, [shipping])
@@ -32,11 +32,11 @@ export default function Cart(props) {
     const handleShipping = (rate, total) => {
         if (rate == 0 || total > 100) {
             setShipping(0)
-            setRate('shr_1JSRCwLJedda0w0czlgiFsBw')
+            setRate('shr_1JZafPLJedda0w0c1smQUazr')
         } else if (rate == 30) {
-            setRate('shr_1JSRFyLJedda0w0c1rZDRjzP')
+            setRate('shr_1JZafqLJedda0w0cdn6pzsS5')
         } else if (rate == 8) {
-            setRate('shr_1JSRDmLJedda0w0c2foMRu87')
+            setRate('shr_1JZafdLJedda0w0c0Eoxw99x')
         }
     }
 
