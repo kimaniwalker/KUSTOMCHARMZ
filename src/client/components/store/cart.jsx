@@ -251,7 +251,7 @@ export default function Cart(props) {
                                         </h2>
                                         <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                             <div className="accordion-body"><strong><p>If for any reason you are not satisfied with a product, you have the following options:</p></strong>
-                                                <p> We give you 10 days to exchange a product for another product or to return a product for a credit note. Your contractual right of withdrawal expires after 10 days from the day on which you or a third party named by you, who is not the carrier, has taken possession of the goods. Please email <a href="mailto:admin@kustomcharmz.com">admin@kustomcharmz.com</a> with your receipt and reason for dissatifaction.</p>
+                                                <p> We give you 24 hours to exchange a product for another product or to return a product for a credit note. Your contractual right of withdrawal expires after 24 hours from the day on which you or a third party named by you, who is not the carrier, has taken possession of the goods. Please email <a href="mailto:admin@kustomcharmz.com">admin@kustomcharmz.com</a> with your receipt and reason for dissatifaction.</p>
                                             </div>
                                         </div>
                                     </div>

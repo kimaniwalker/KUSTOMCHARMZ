@@ -51,12 +51,12 @@ export default function Getintouch(props) {
                         <div className="row pb-4">
                             <span>If you have any questions or concerns please feel free to contact us. We're happy to help with any questions you may have.</span>
                         </div>
-                        <div className="row py-3">
+                        {/* <div className="row py-3">
                             <div className="col-12">
                                 <i className="bi bi-phone"></i><p id="phone" className="p-4 text-secondary d-inline">205-603-8724</p>
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className="row py-3">
                             <div className="col-12">
                                 <i className="bi bi-envelope"></i><p id="email" className="p-4 text-secondary d-inline"><a id="email" className="text-secondary" href="mailto:admin@kustomcharmz.com">admin@kustomcharmz.com</a></p>
